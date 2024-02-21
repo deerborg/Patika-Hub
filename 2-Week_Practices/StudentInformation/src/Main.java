@@ -12,7 +12,6 @@ public class Main {
         Teacher addTwo = new Teacher("Ulaş Hoca2", "44124-44-15", "Physc Teacher");
         Teacher addThree = new Teacher("Ulaş Hoca3", "4124-55-123", "Chemic Teacher");
         
-
         mathsCourse.addTeacher(addOne);
         phsicCourse.addTeacher(addTwo);
         chemical.addTeacher(addThree);
