@@ -105,3 +105,4 @@ This repo is an archive containing all the projects I will make during my Java l
  |
  2       | 9  | [isPolindrom](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/isPolindrom)|
  |
+</details>
