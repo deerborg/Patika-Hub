@@ -6,7 +6,8 @@ A package of Patika+ assignments and projects in one repo.
 ---
 
 
-![haedpng](https://github.com/deerborg/Patika_practices/assets/152931069/b47b4073-c2e1-4076-b7eb-f559fbcf441b)
+![bannerhub](https://github.com/deerborg/Patika-Hub/assets/152931069/f524418e-39f0-4696-8c70-1bf1cfa8f862)
+
 --
 ## Patika+ Full Stack Bootcamp Repository
 
