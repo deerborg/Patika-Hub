@@ -18,6 +18,7 @@ public class Company {
         this.workWeekHours = workWeekHours;
         this.dateOfYear = dateOfYear;
     }
+    // Tax calculation funciton
     public void tax(){
         if(workerSalary < 1000){
             System.out.println(workerSalary);
@@ -30,6 +31,7 @@ public class Company {
           System.out.println("Tax: "+tax);
         }
     }
+    // Total bonu calculation function
     public void bonus(){
         if(workWeekHours > 40){
             int workBonus = (workWeekHours - 40);
@@ -38,6 +40,7 @@ public class Company {
             System.out.println("Bonus: " +bonus);
         }
     }
+   //Total year calculation function 
     public void raiseSalary(){
         int nowYear = 2021;
         int checkYear = nowYear - dateOfYear;
@@ -55,6 +58,7 @@ public class Company {
             System.out.println("Total year "+checkYear);
         }
     }
+    // Saved data allows us to print out information
     public void getWorkerInformation(){
         tax();
         raiseSalary();
