@@ -18,10 +18,6 @@ This repo is an archive containing all the projects I will make during my Java l
 #### You can use and develop the repository content as you wish.
 
 
-
-![tumblr_e306b43776e5d6b29ec1b678db259f11_999c30cb_1280](https://github.com/deerborg/Patika_practices/assets/152931069/37b7940f-4d00-4a56-aa60-d59c67dfbca1)
-
-
 ---
 
 
