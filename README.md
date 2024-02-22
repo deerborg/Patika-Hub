@@ -26,6 +26,6 @@ This repo is an archive containing all the projects I will make during my Java l
 
 ## Project
  [Week One Practices](https://github.com/deerborg/Patika_practices/tree/main/weekOne)
- [1] (https://github.com/deerborg/Patika-Hub/blob/main/1-Week_Practices/ATM/src/Main.java)
+ 
 
 ---
