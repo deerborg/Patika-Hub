@@ -1,4 +1,3 @@
----
 # Noob for Java, but am learning
 
 A package of Patika+ assignments and projects in one repo.
@@ -16,15 +15,15 @@ This repo is an archive containing all the projects I will make during my Java l
 
 
 #### You can use and develop the repository content as you wish.
+# Feedback
+[dborg.art](https://dborg.art/contact) Submit your feedback.
 
 
 ---
 
 
 ## Project
- <details>
-<summary>Practices 1</summary>
-<br>
+ 
 
 | Week| Or  |Name|
 |:---:    |---:|:----         |
@@ -76,11 +75,9 @@ This repo is an archive containing all the projects I will make during my Java l
 | 1       | 30  | [Type Casting](https://github.com/deerborg/Patika-Hub/tree/main/1-Week_Practices/TipDonusumleri)|
 | 1       | 31  | [Triangle Area](https://github.com/deerborg/Patika-Hub/tree/main/1-Week_Practices/TriangleArea)|
 
-</details>
 
-<details open>
-<summary>Practices 2</summary>
-<br>
+
+
 
 |Week| Or  | Name|
 |:---:    |---:|:----         |
@@ -90,16 +87,17 @@ This repo is an archive containing all the projects I will make during my Java l
 |
 | 2       | 3  | [Polindrom Calculation](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/PolindromCalculation)|
 |
- 2       | 4  | [Polindrom Calculation](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/PolindromCalculation)|
- |
- 2       | 5  | [Prime Number Method](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/PrimeNumberMethod)|
- |
-  2       | 6  | [Print Loop](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/PrintLoop)|
- |
- 2       | 7  | [Salary Calculation](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/SalaryCalculator)|
- |
- 2       | 8  | [Student Information](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/StudentInformation)|
- |
- 2       | 9  | [isPolindrom](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/isPolindrom)|
- |
-</details>
+| 2       | 4  | [Polindrom Calculation](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/PolindromCalculation)|
+|
+|2       | 5  | [Prime Number Method](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/PrimeNumberMethod)|
+|
+|2       | 6  | [Print Loop](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/PrintLoop)|
+|
+|2       | 7  | [Salary Calculation](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/SalaryCalculator)|
+|
+|2       | 8  | [Student Information](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/StudentInformation)|
+|
+|2       | 9  | [isPolindrom](https://github.com/deerborg/Patika-Hub/tree/main/2-Week_Practices/isPolindrom)|
+
+# License
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
