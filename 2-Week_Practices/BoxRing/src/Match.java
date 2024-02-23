@@ -26,7 +26,6 @@ public class Match {
         this.fighterOneHealth = random.nextInt(100,151);
         this.fighterTwoHealth = random.nextInt(100,151);
     }
-    
     // Karışıklığı engellemek amaçlı ayraç
     public void bracket(){
         System.out.println("--------------------------------------");
@@ -83,14 +82,14 @@ public class Match {
                 System.out.println(fighterOneName + " attacked!! woooww");
                 // Maçı başlatan döngü
                 bracket();
-                fighterOneHit = random.nextInt(30,40);
+                fighterOneHit = random.nextInt(1,11);
                 fighterTwoHealth -= fighterOneHit;
                 System.out.println("So hard punch " + fighterOneName + " Damage: " + fighterOneHit + "  Health " + fighterTwoHealth);
                 bracket();
                 
-                fighterTwoHit = random.nextInt(30,40);
+                fighterTwoHit = random.nextInt(1,11);
                 fighterOneHealth -= fighterTwoHit;
-                System.out.println("Very good " + fighterOneName + " Damage: " + fighterTwoHit + " Health " + fighterOneHealth);
+                System.out.println("Very good " + fighterTwoName + " Damage: " + fighterTwoHit + " Health " + fighterOneHealth);
                 bracket();
                 
                 if(fighterOneHealth > 0 || fighterTwoHealth > 0){
@@ -117,16 +116,16 @@ public class Match {
                 }
             }
             if(firstPunch == 2){
-                System.out.println(fighterOneName + " attacked!! woooww");
+                System.out.println(fighterTwoName + " attacked!! woooww");
                 // Maçı başlatan döngü
                 bracket();
                 
-                fighterOneHit = random.nextInt(30,40);
+                fighterOneHit = random.nextInt(1,11);
                 fighterTwoHealth -= fighterOneHit;
-                System.out.println("So hard punch " + fighterOneName + " Damage: " + fighterOneHit + "  Health " + fighterTwoHealth);
+                System.out.println("So hard punch " + fighterTwoName + " Damage: " + fighterOneHit + "  Health " + fighterTwoHealth);
                 bracket();
                 
-                fighterTwoHit = random.nextInt(30,40);
+                fighterTwoHit = random.nextInt(1,11);
                 fighterOneHealth -= fighterTwoHit;
                 System.out.println("Very good " + fighterOneName + " Damage: " + fighterTwoHit + " Health " + fighterOneHealth);
                 bracket();
