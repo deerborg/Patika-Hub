@@ -1,22 +1,19 @@
-import java.util.Arrays;
-import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         
-        int[] list = {1,1,1,3,3,4,5,5,6,7,8,9,9,10,11,12,13,13,13,2,2,4,4,4,44,44,444,22,20,14,14};
-        Arrays.sort(list);
-        int sayac = 0;
-        System.out.print("Tekrar eden cift sayilar ---> ");
-        for(int i = 0 ; i < list.length ; i++){
-            for(int j = 0; j < list.length ; j++){
-                if(list[i] == list[j] && i != j){
-                    if(list[i] % 2 == 0 || list[j] % 2 == 0){
-                        System.out.print(+list[i] + " ");
-                        break;
-                    } 
-                }
-            }
-        }
+        
+        Teacher fizikOgretmeni = new Teacher("Batu", "Fizik");
+        Teacher kimyaOgretmeni = new Teacher("Furkan", "Kimya");
+        Teacher matematikOgretmeni = new Teacher("Semih", "Matematik");
+        Teacher tarihOgretmeni = new Teacher("Ulas", "Tarih");
+        
+        Course fizikSinifi = new Course("Fizik");
+        Course kimyaSinifi = new Course("Kimya");
+        Course matematikSinifi = new Course("Matematik");
+        Course tarihSinifi = new Course("Tarih");
 
-    }       
-}             
+
+    }
+
+}
