@@ -8,28 +8,28 @@
  /* 
  * 
  *                                                          BLACKJACK KURALLARI
- *          |------------------------------------------------------------------------------------------------------------------------------|
- *          |    * Toplam kart sayısı ilk turda 21 olduğu zaman 3 katını kazanırınız                                                       |
- *          |    * Eğer toplam kart 21 üstü olursa kaybedersiniz                                                                           | 
- *          |    * Eğer toplam kartınız kasanın toplam kartından küçükse kaybedersiniz                                                     |
- *          |    * Eğer toplam kartınız 21 küçük ve kasanın açtığından büyükse kazanırsınız 2 katını kazanırsınız                          |
- *          |    * Eğer kasa toplam kartı, ilk turda 21 olursa ve siz 21 değilseniz kasa kazanır                                           |
- *          |    * Eğer kart çekmek isterseniz 21 den küçük olana kadar çekmenize imkan tanır                                              |  
- *          |    * Eğer çekilen kartlar toplamı 21 geçerse kaybedersiniz                                                                   |  
- *          |    * Kasa en fazla toplam kartı 18 olana kadar çekebilir                                                                     |
- *          |    * Kartlar Random sınıfı üzerinden 1 ile 12 arasında rakamlardan rastgele olarak verilir.                                  |
- *          |    * Hem kasa hem kullanıcı eşit değerlerde kart toplamına sahipse beraberlik olur, iki tarafta bakiyesine ekleme yapmaz.    |
- *          |------------------------------------------------------------------------------------------------------------------------------|
- *          |                !! - Beraberlik durumu bu oyun için devredışı.                                                                |
- *          |                !! - Bakiye 0 ' dan küçük döngüsü devre dışı. Oyun bitince program sonlanır.                                  |
- *          |------------------------------------------------------------------------------------------------------------------------------|
+ *          |------------------------------------------------------------------------------------------------------------------------------|    *
+ *          |    * Toplam kart sayısı ilk turda 21 olduğu zaman 3 katını kazanırınız                                                       |    *
+ *          |    * Eğer toplam kart 21 üstü olursa kaybedersiniz                                                                           |    * 
+ *          |    * Eğer toplam kartınız kasanın toplam kartından küçükse kaybedersiniz                                                     |    *
+ *          |    * Eğer toplam kartınız 21 küçük ve kasanın açtığından büyükse kazanırsınız 2 katını kazanırsınız                          |    *
+ *          |    * Eğer kasa toplam kartı, ilk turda 21 olursa ve siz 21 değilseniz kasa kazanır                                           |    *   
+ *          |    * Eğer kart çekmek isterseniz 21 den küçük olana kadar çekmenize imkan tanır                                              |    *
+ *          |    * Eğer çekilen kartlar toplamı 21 geçerse kaybedersiniz                                                                   |    *  
+ *          |    * Kasa en fazla toplam kartı 18 olana kadar çekebilir                                                                     |    *
+ *          |    * Kartlar Random sınıfı üzerinden 1 ile 12 arasında rakamlardan rastgele olarak verilir.                                  |    *
+ *          |    * Hem kasa hem kullanıcı eşit değerlerde kart toplamına sahipse beraberlik olur, iki tarafta bakiyesine ekleme yapmaz.    |    *
+ *          |------------------------------------------------------------------------------------------------------------------------------|    *
+ *          |                !! - Beraberlik durumu bu oyun için devredışı.                                                                |    *
+ *          |                !! - Bakiye 0 ' dan küçük döngüsü devre dışı. Oyun bitince program sonlanır.                                  |    *
+ *          |------------------------------------------------------------------------------------------------------------------------------|    *
  */
-
 
 import java.util.Scanner;
 import java.util.Random;
 public class Main {
     public static void main(String[] args) {
+        System.out.println("");
         Random blackJack = new Random();
         Scanner value = new Scanner(System.in);
         // döngü içinde kullanılacak değişkenler
