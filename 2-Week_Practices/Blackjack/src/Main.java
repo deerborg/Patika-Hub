@@ -33,7 +33,7 @@ public class Main {
         Random blackJack = new Random();
         Scanner value = new Scanner(System.in);
         // döngü içinde kullanılacak değişkenler
-        int balance,startBonus = 100, cardValue, cashierCardFs,cashierCardSc,userCardFs,userCardSc,playOrLeaveGame,totalCardUser,totalCardCashier,userMoreCard,cashierMoreCard,forceQuit = 0,userAddCard = 0;
+        int balance,startBonus = 100, cardValue, cashierCardFs,cashierCardSc,userCardFs,userCardSc,playOrLeaveGame,totalCardUser,totalCardCashier,userMoreCard,cashierMoreCard,forceQuit = 0,userAddCard = 0,cashierCardAdd = 0;
         System.out.println("balance: ");
         balance = value.nextInt();
         // bonus bakiyeye +100 ekler ve öyle oyuna başlar
@@ -101,11 +101,13 @@ public class Main {
                     do {                        
                         System.out.println("Kasa kart aciyo");
                         cashierMoreCard = blackJack.nextInt(1,12);
-                        totalCardCashier = cashierCardFs + cashierCardSc + cashierMoreCard;
-                    } while (totalCardCashier < 18);
+                        System.out.println("Kasa acilan kart " + cashierMoreCard);
+                        cashierCardAdd+=cashierMoreCard;
+                        totalCardCashier = cashierCardFs + cashierCardSc + cashierCardAdd;
+                    } while (totalCardCashier <= 17);
                     if(totalCardCashier > 18){
                         if(totalCardCashier > 21){
-                            System.out.println("kasa acilan kart :" + cashierMoreCard);
+                            
                             System.out.println("kasa acilan toplam kart: " + totalCardCashier);
                             System.out.println("kazandiniz toplam kart: " + totalCardUser);
                             System.out.println("bakiye: " + totalBalance);
