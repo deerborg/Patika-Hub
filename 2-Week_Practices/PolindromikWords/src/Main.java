@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
     static boolean isPalindrome(String str) {
         int i = 0, j = str.length() - 1;
@@ -23,6 +24,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPalindrome("abba"));
+        String polindrom;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter words");
+        polindrom = scanner.nextLine();
+        System.out.println(isPalindrome(polindrom));
     }
 }
