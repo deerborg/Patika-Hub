@@ -9,7 +9,7 @@
 import java.util.Random;
 public class Main {
     public static void main(String[] args) {
-       Match match = new Match("Furkan", "Dogus");
+       Match match = new Match("Furkan", "Batu");
        
        // Kullanılabilir metotlar
        
