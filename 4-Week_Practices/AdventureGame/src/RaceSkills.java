@@ -10,7 +10,6 @@ public abstract class RaceSkills {
 
 
     public RaceSkills(int damage, int magicDamage, int money, int health , String weapon, String raceName, int ID) {
-
         this.damage = damage;
         this.magicDamage = magicDamage;
         this.money = money;
@@ -18,7 +17,6 @@ public abstract class RaceSkills {
         this.health = health;
         this.raceName = raceName;
         this.ID = ID;
-
     }
 
     public int getID() {
