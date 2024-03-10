@@ -174,7 +174,7 @@ public class AllMechanic {
                     break;
                 }
             }
-            if(userChoice == 4){
+            if (userChoice == 4) {
                 System.out.println("TEK YİYEN TEK ÖLÜR!");
                 break;
             }
@@ -185,21 +185,21 @@ public class AllMechanic {
         }
     }
 
-    public void choiceLocation(){
+    public void choiceLocation() {
         RuinPalace ruin = new RuinPalace();
         River river = new River();
         Cave cave = new Cave();
         System.out.println("1 - Mağaralara\t2 - Issız Nehir\t 3 - Terkedilmiş Malikane");
         userChoice = value.nextInt();
-        while (true){
-            if(userChoice == 1){
+        while (true) {
+            if (userChoice == 1) {
                 System.out.println("CESURSUN, mağaralara doğru yola çıktın...");
                 System.out.println("Puslu,soğuk ve karanlık!");
                 System.out.println("Canın : " + health);
                 System.out.println("Gücün : " + damage);
                 System.out.println("Mağaranın girişine geldin... İçeri girecek misin? 1 - Evet 2 - Korkak!");
                 userChoice = value.nextInt();
-                if(userChoice == 1){
+                if (userChoice == 1) {
                     System.out.println("Mağaradan abuk subuk sesler geliyor!");
                     System.out.println("Yaratık Adı : " + cave.getMonster());
                     System.out.println("Yaratık gücü: " + cave.getEnemyDamage());
@@ -207,7 +207,7 @@ public class AllMechanic {
                     enemyHealth = cave.getEnemyHealth();
                     System.out.println(cave.getMonster() + " Sana doğru hızlıca geliyor...!!!:!:!:!:!:!");
                     System.out.println("Vuruşuyonuz");
-                    while (true){
+                    while (true) {
                         System.out.println("Yaratık sağlam yapıştırdı");
                         health -= cave.getEnemyDamage();
                         System.out.println("Canın : " + health + " Yediğin hasar: " + cave.getEnemyDamage());
@@ -215,12 +215,12 @@ public class AllMechanic {
                         enemyHealth -= damage;
                         System.out.println("Koyduğun hasar: " + damage);
                         System.out.println("Yaratığın kalan canı " + enemyHealth);
-                        if(health < 0 && health < enemyHealth){
+                        if (health < 0 && health < enemyHealth) {
                             System.out.println("GEBERDİN, OYUN BİTTİ");
                             winCounter = 0;
                             break;
                         }
-                        if(enemyHealth < 0 && enemyHealth < health){
+                        if (enemyHealth < 0 && enemyHealth < health) {
                             System.out.println("ASLAN ASLAN!! AL BUNLAR GANNİMETİN");
                             System.out.println("Aldın bişeyler");
                             this.awardValue += cave.getAward();
@@ -229,10 +229,10 @@ public class AllMechanic {
                             System.out.println("Kapma doğru yola çıkıyorsun...");
                             break;
                         }
-                        if(winCounter < 0){
+                        if (winCounter < 0) {
                             System.out.println("Dandik kral koşarak sana sarılıyor");
                             System.out.println("Helal kocum, gec yat dinlen biraz");
-                            health+=50;
+                            health += 50;
                             System.out.println("Dinleniyorsun... Sağlığın arttı" + health);
                             break;
                         }
@@ -242,14 +242,14 @@ public class AllMechanic {
                 }
 
             }
-            if(userChoice == 2){
+            if (userChoice == 2) {
                 System.out.println("Hava kapalı ve heryer pis kokuyor");
                 System.out.println("Canın : " + health);
                 System.out.println("Gücün : " + damage);
                 System.out.println("Nehirin kıyısını kontrol ediyorsun..");
                 System.out.println("Kokunun kaynağına bakacak mısın? 1 - Evet , 2 - Korkak! ");
                 userChoice = value.nextInt();
-                if(userChoice == 1){
+                if (userChoice == 1) {
                     System.out.println("Yürüyen cesetler!!!!");
                     System.out.println("Yaratık Adı : " + river.getMonster());
                     System.out.println("Yaratık gücü: " + river.getEnemyDamage());
@@ -257,7 +257,7 @@ public class AllMechanic {
                     enemyHealth = river.getEnemyHealth();
                     System.out.println(cave.getMonster() + " Sana doğru hızlıca geliyor...!!!:!:!:!:!:!");
                     System.out.println("Vuruşuyonuz");
-                    while (true){
+                    while (true) {
                         System.out.println("Yaratık sağlam yapıştırdı");
                         health -= river.getEnemyDamage();
                         System.out.println("Canın : " + health + " Yediğin hasar: " + river.getEnemyDamage());
@@ -265,12 +265,12 @@ public class AllMechanic {
                         enemyHealth -= damage;
                         System.out.println("Koyduğun hasar: " + damage);
                         System.out.println("Yaratığın kalan canı " + enemyHealth);
-                        if(health < 0 && health < enemyHealth){
+                        if (health < 0 && health < enemyHealth) {
                             System.out.println("GEBERDİN, OYUN BİTTİ");
                             winCounter = 0;
                             break;
                         }
-                        if(enemyHealth < 0 && enemyHealth < health){
+                        if (enemyHealth < 0 && enemyHealth < health) {
                             System.out.println("ASLAN ASLAN!! AL BUNLAR GANNİMETİN");
                             System.out.println("Aldın bişeyler");
                             this.awardValue += river.getAward();
@@ -279,10 +279,10 @@ public class AllMechanic {
                             System.out.println("Kapma doğru yola çıkıyorsun...");
                             break;
                         }
-                        if(winCounter < 0){
+                        if (winCounter < 0) {
                             System.out.println("Dandik kral koşarak sana sarılıyor");
                             System.out.println("Helal kocum, gec yat dinlen biraz");
-                            health+=50;
+                            health += 50;
                             System.out.println("Dinleniyorsun... Sağlığın arttı" + health);
                             break;
                         }
@@ -292,14 +292,14 @@ public class AllMechanic {
                 }
 
             }
-            if(userChoice == 3){
+            if (userChoice == 3) {
                 System.out.println("Yıkı dökük ama güzel bir yere benziyor");
                 System.out.println("Canın : " + health);
                 System.out.println("Gücün : " + damage);
                 System.out.println("Keskin vızıltılar duyuyorsun");
                 System.out.println("Sesin kaynağına bakacak mısın? 1 - Evet , 2 - Korkak! ");
                 userChoice = value.nextInt();
-                if(userChoice == 1){
+                if (userChoice == 1) {
                     System.out.println("Kan sinekleriii!!!");
                     System.out.println("Yaratık Adı : " + ruin.getMonster());
                     System.out.println("Yaratık gücü: " + ruin.getEnemyDamage());
@@ -307,7 +307,7 @@ public class AllMechanic {
                     enemyHealth = ruin.getEnemyHealth();
                     System.out.println(cave.getMonster() + " Sana doğru hızlıca geliyor...!!!:!:!:!:!:!");
                     System.out.println("Vuruşuyonuz");
-                    while (true){
+                    while (true) {
                         System.out.println("Yaratık sağlam yapıştırdı");
                         health -= ruin.getEnemyDamage();
                         System.out.println("Canın : " + health + " Yediğin hasar: " + ruin.getEnemyDamage());
@@ -315,12 +315,12 @@ public class AllMechanic {
                         enemyHealth -= damage;
                         System.out.println("Koyduğun hasar: " + damage);
                         System.out.println("Yaratığın kalan canı " + enemyHealth);
-                        if(health < 0 && health < enemyHealth){
+                        if (health < 0 && health < enemyHealth) {
                             System.out.println("GEBERDİN, OYUN BİTTİ");
                             winCounter = 0;
                             break;
                         }
-                        if(enemyHealth < 0 && enemyHealth < health){
+                        if (enemyHealth < 0 && enemyHealth < health) {
                             System.out.println("ASLAN ASLAN!! AL BUNLAR GANNİMETİN");
                             System.out.println("Aldın bişeyler");
                             this.awardValue += ruin.getAward();
@@ -329,10 +329,10 @@ public class AllMechanic {
                             System.out.println("Kapma doğru yola çıkıyorsun...");
                             break;
                         }
-                        if(winCounter < 0){
+                        if (winCounter < 0) {
                             System.out.println("Dandik kral koşarak sana sarılıyor");
                             System.out.println("Helal kocum, gec yat dinlen biraz");
-                            health+=50;
+                            health += 50;
                             System.out.println("Dinleniyorsun... Sağlığın arttı" + health);
                             break;
                         }

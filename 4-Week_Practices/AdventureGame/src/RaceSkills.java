@@ -8,8 +8,7 @@ public abstract class RaceSkills {
     private String weapon;
 
 
-
-    public RaceSkills(int damage, int magicDamage, int money, int health , String weapon, String raceName, int ID) {
+    public RaceSkills(int damage, int magicDamage, int money, int health, String weapon, String raceName, int ID) {
         this.damage = damage;
         this.magicDamage = magicDamage;
         this.money = money;
