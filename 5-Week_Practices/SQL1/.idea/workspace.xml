@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="745366a4-55b3-4170-b769-c07b499fdecf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +34,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dborg\Masaüstü\PatikaHub\Patika-Hub\5-Week_Practices\SQL1\src\sql_2" />
+      <recent name="C:\Users\dborg\Masaüstü\PatikaHub\Patika-Hub\5-Week_Practices\SQL1\src\sql_1" />
       <recent name="C:\Users\dborg\Masaüstü\PatikaHub\Patika-Hub\5-Week_Practices\SQL1\src" />
     </key>
   </component>
