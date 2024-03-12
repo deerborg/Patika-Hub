@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="745366a4-55b3-4170-b769-c07b499fdecf" name="Changes" comment="" />
+    <list default="true" id="745366a4-55b3-4170-b769-c07b499fdecf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +36,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dborg\Masaüstü\PatikaHub\Patika-Hub\5-Week_Practices\SQL1\src\sql_4" />
+      <recent name="C:\Users\dborg\Masaüstü\PatikaHub\Patika-Hub\5-Week_Practices\SQL1\src\sql_3" />
       <recent name="C:\Users\dborg\Masaüstü\PatikaHub\Patika-Hub\5-Week_Practices\SQL1\src\sql_2" />
       <recent name="C:\Users\dborg\Masaüstü\PatikaHub\Patika-Hub\5-Week_Practices\SQL1\src\sql_1" />
       <recent name="C:\Users\dborg\Masaüstü\PatikaHub\Patika-Hub\5-Week_Practices\SQL1\src" />
