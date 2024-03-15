@@ -90,6 +90,7 @@ This repository is an archive containing all the projects I have completed durin
 | 2   | SQL-1                 | [Source](https://github.com/deerborg/Patika-Hub/tree/main/5-Week_Practices/SQL1)     |
 | 3   | Try-Catch             | [Source](https://github.com/deerborg/Patika-Hub/tree/main/5-Week_Practices/TryCatch/src)      |
 | 4   | Words                 | [Source](https://github.com/deerborg/Patika-Hub/tree/main/5-Week_Practices/Words/src)               |
+| 5   | Patika Store                 | [Source](https://github.com/deerborg/Patika-Hub/tree/main/5-Week_Practices/PatikaStore/src)               |
 
 
 </details>
