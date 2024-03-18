@@ -1,0 +1,14 @@
+delete from employee
+where id < 10;
+
+delete from employee
+where id = 50;
+
+delete from employee
+where name like '%3';
+
+delete from employee
+where name like ' ';
+
+delete from employee
+where id > 100

@@ -1,0 +1,15 @@
+UPDATE employee
+SET name = 'Update2'
+WHERE id > 50;
+
+UPDATE employee
+SET name = 'Update3'
+WHERE id < 50;
+
+UPDATE employee
+SET name = 'Update4'
+WHERE name like 'A%';
+
+UPDATE employee
+SET name = 'Update5'
+WHERE name like '%a';
