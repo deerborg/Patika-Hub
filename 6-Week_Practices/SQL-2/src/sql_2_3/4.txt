@@ -1,0 +1,4 @@
+SELECT country_id AS şehir , MAX(country_id) AS "en fazla" FROM city
+GROUP BY country_id
+ORDER BY country_id DESC
+LIMIT 1
