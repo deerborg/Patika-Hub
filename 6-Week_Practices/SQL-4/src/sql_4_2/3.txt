@@ -1,0 +1,2 @@
+select rental.rental_id , customer.first_name,customer.last_name from rental
+full join customer on customer.customer_id = rental.rental_id;

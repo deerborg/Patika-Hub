@@ -1,0 +1,601 @@
+"city","country"
+"A Corua (La Corua)","Afghanistan"
+"Abha","Algeria"
+"Abu Dhabi","American Samoa"
+"Acua","Angola"
+"Adana","Anguilla"
+"Addis Abeba","Argentina"
+"Aden","Armenia"
+"Adoni","Australia"
+"Ahmadnagar","Austria"
+"Akishima","Azerbaijan"
+"Akron","Bahrain"
+"al-Ayn","Bangladesh"
+"al-Hawiya","Belarus"
+"al-Manama","Bolivia"
+"al-Qadarif","Brazil"
+"al-Qatif","Brunei"
+"Alessandria","Bulgaria"
+"Allappuzha (Alleppey)","Cambodia"
+"Allende","Cameroon"
+"Almirante Brown","Canada"
+"Alvorada","Chad"
+"Ambattur","Chile"
+"Amersfoort","China"
+"Amroha","Colombia"
+"Angra dos Reis","Congo, The Democratic Republic of the"
+"Anpolis","Czech Republic"
+"Antofagasta","Dominican Republic"
+"Aparecida de Goinia","Ecuador"
+"Apeldoorn","Egypt"
+"Araatuba","Estonia"
+"Arak","Ethiopia"
+"Arecibo","Faroe Islands"
+"Arlington","Finland"
+"Ashdod","France"
+"Ashgabat","French Guiana"
+"Ashqelon","French Polynesia"
+"Asuncin","Gambia"
+"Athenai","Germany"
+"Atinsk","Greece"
+"Atlixco","Greenland"
+"Augusta-Richmond County","Holy See (Vatican City State)"
+"Aurora","Hong Kong"
+"Avellaneda","Hungary"
+"Bag","India"
+"Baha Blanca","Indonesia"
+"Baicheng","Iran"
+"Baiyin","Iraq"
+"Baku","Israel"
+"Balaiha","Italy"
+"Balikesir","Japan"
+"Balurghat","Kazakstan"
+"Bamenda","Kenya"
+"Bandar Seri Begawan","Kuwait"
+"Banjul","Latvia"
+"Barcelona","Liechtenstein"
+"Basel","Lithuania"
+"Bat Yam","Madagascar"
+"Batman","Malawi"
+"Batna","Malaysia"
+"Battambang","Mexico"
+"Baybay","Moldova"
+"Bayugan","Morocco"
+"Bchar","Mozambique"
+"Beira","Myanmar"
+"Bellevue","Nauru"
+"Belm","Nepal"
+"Benguela","Netherlands"
+"Beni-Mellal","New Zealand"
+"Benin City","Nigeria"
+"Bergamo","North Korea"
+"Berhampore (Baharampur)","Oman"
+"Bern","Pakistan"
+"Bhavnagar","Paraguay"
+"Bhilwara","Peru"
+"Bhimavaram","Philippines"
+"Bhopal","Poland"
+"Bhusawal","Puerto Rico"
+"Bijapur","Romania"
+"Bilbays","Runion"
+"Binzhou","Russian Federation"
+"Birgunj","Saint Vincent and the Grenadines"
+"Bislig","Saudi Arabia"
+"Blumenau","Senegal"
+"Boa Vista","Slovakia"
+"Boksburg","South Africa"
+"Botosani","South Korea"
+"Botshabelo","Spain"
+"Bradford","Sri Lanka"
+"Braslia","Sudan"
+"Bratislava","Sweden"
+"Brescia","Switzerland"
+"Brest","Taiwan"
+"Brindisi","Tanzania"
+"Brockton","Thailand"
+"Bucuresti","Tonga"
+"Buenaventura","Tunisia"
+"Bydgoszcz","Turkey"
+"Cabuyao","Turkmenistan"
+"Callao","Tuvalu"
+"Cam Ranh","Ukraine"
+"Cape Coral","United Arab Emirates"
+"Caracas","United Kingdom"
+"Carmen","United States"
+"Cavite","Venezuela"
+"Cayenne","Vietnam"
+"Celaya","Virgin Islands, U.S."
+"Chandrapur","Yemen"
+"Changhwa","Yugoslavia"
+"Changzhou","Zambia"
+"Chapra",NULL
+"Charlotte Amalie",NULL
+"Chatsworth",NULL
+"Cheju",NULL
+"Chiayi",NULL
+"Chisinau",NULL
+"Chungho",NULL
+"Cianjur",NULL
+"Ciomas",NULL
+"Ciparay",NULL
+"Citrus Heights",NULL
+"Citt del Vaticano",NULL
+"Ciudad del Este",NULL
+"Clarksville",NULL
+"Coacalco de Berriozbal",NULL
+"Coatzacoalcos",NULL
+"Compton",NULL
+"Coquimbo",NULL
+"Crdoba",NULL
+"Cuauhtmoc",NULL
+"Cuautla",NULL
+"Cuernavaca",NULL
+"Cuman",NULL
+"Czestochowa",NULL
+"Dadu",NULL
+"Dallas",NULL
+"Datong",NULL
+"Daugavpils",NULL
+"Davao",NULL
+"Daxian",NULL
+"Dayton",NULL
+"Deba Habe",NULL
+"Denizli",NULL
+"Dhaka",NULL
+"Dhule (Dhulia)",NULL
+"Dongying",NULL
+"Donostia-San Sebastin",NULL
+"Dos Quebradas",NULL
+"Duisburg",NULL
+"Dundee",NULL
+"Dzerzinsk",NULL
+"Ede",NULL
+"Effon-Alaiye",NULL
+"El Alto",NULL
+"El Fuerte",NULL
+"El Monte",NULL
+"Elista",NULL
+"Emeishan",NULL
+"Emmen",NULL
+"Enshi",NULL
+"Erlangen",NULL
+"Escobar",NULL
+"Esfahan",NULL
+"Eskisehir",NULL
+"Etawah",NULL
+"Ezeiza",NULL
+"Ezhou",NULL
+"Faaa",NULL
+"Fengshan",NULL
+"Firozabad",NULL
+"Florencia",NULL
+"Fontana",NULL
+"Fukuyama",NULL
+"Funafuti",NULL
+"Fuyu",NULL
+"Fuzhou",NULL
+"Gandhinagar",NULL
+"Garden Grove",NULL
+"Garland",NULL
+"Gatineau",NULL
+"Gaziantep",NULL
+"Gijn",NULL
+"Gingoog",NULL
+"Goinia",NULL
+"Gorontalo",NULL
+"Grand Prairie",NULL
+"Graz",NULL
+"Greensboro",NULL
+"Guadalajara",NULL
+"Guaruj",NULL
+"guas Lindas de Gois",NULL
+"Gulbarga",NULL
+"Hagonoy",NULL
+"Haining",NULL
+"Haiphong",NULL
+"Haldia",NULL
+"Halifax",NULL
+"Halisahar",NULL
+"Halle/Saale",NULL
+"Hami",NULL
+"Hamilton",NULL
+"Hanoi",NULL
+"Hidalgo",NULL
+"Higashiosaka",NULL
+"Hino",NULL
+"Hiroshima",NULL
+"Hodeida",NULL
+"Hohhot",NULL
+"Hoshiarpur",NULL
+"Hsichuh",NULL
+"Huaian",NULL
+"Hubli-Dharwad",NULL
+"Huejutla de Reyes",NULL
+"Huixquilucan",NULL
+"Hunuco",NULL
+"Ibirit",NULL
+"Idfu",NULL
+"Ife",NULL
+"Ikerre",NULL
+"Iligan",NULL
+"Ilorin",NULL
+"Imus",NULL
+"Inegl",NULL
+"Ipoh",NULL
+"Isesaki",NULL
+"Ivanovo",NULL
+"Iwaki",NULL
+"Iwakuni",NULL
+"Iwatsuki",NULL
+"Izumisano",NULL
+"Jaffna",NULL
+"Jaipur",NULL
+"Jakarta",NULL
+"Jalib al-Shuyukh",NULL
+"Jamalpur",NULL
+"Jaroslavl",NULL
+"Jastrzebie-Zdrj",NULL
+"Jedda",NULL
+"Jelets",NULL
+"Jhansi",NULL
+"Jinchang",NULL
+"Jining",NULL
+"Jinzhou",NULL
+"Jodhpur",NULL
+"Johannesburg",NULL
+"Joliet",NULL
+"Jos Azueta",NULL
+"Juazeiro do Norte",NULL
+"Juiz de Fora",NULL
+"Junan",NULL
+"Jurez",NULL
+"Kabul",NULL
+"Kaduna",NULL
+"Kakamigahara",NULL
+"Kaliningrad",NULL
+"Kalisz",NULL
+"Kamakura",NULL
+"Kamarhati",NULL
+"Kamjanets-Podilskyi",NULL
+"Kamyin",NULL
+"Kanazawa",NULL
+"Kanchrapara",NULL
+"Kansas City",NULL
+"Karnal",NULL
+"Katihar",NULL
+"Kermanshah",NULL
+"Kilis",NULL
+"Kimberley",NULL
+"Kimchon",NULL
+"Kingstown",NULL
+"Kirovo-Tepetsk",NULL
+"Kisumu",NULL
+"Kitwe",NULL
+"Klerksdorp",NULL
+"Kolpino",NULL
+"Konotop",NULL
+"Koriyama",NULL
+"Korla",NULL
+"Korolev",NULL
+"Kowloon and New Kowloon",NULL
+"Kragujevac",NULL
+"Ktahya",NULL
+"Kuching",NULL
+"Kumbakonam",NULL
+"Kurashiki",NULL
+"Kurgan",NULL
+"Kursk",NULL
+"Kuwana",NULL
+"La Paz",NULL
+"La Plata",NULL
+"La Romana",NULL
+"Laiwu",NULL
+"Lancaster",NULL
+"Laohekou",NULL
+"Lapu-Lapu",NULL
+"Laredo",NULL
+"Lausanne",NULL
+"Le Mans",NULL
+"Lengshuijiang",NULL
+"Leshan",NULL
+"Lethbridge",NULL
+"Lhokseumawe",NULL
+"Liaocheng",NULL
+"Liepaja",NULL
+"Lilongwe",NULL
+"Lima",NULL
+"Lincoln",NULL
+"Linz",NULL
+"Lipetsk",NULL
+"Livorno",NULL
+"Ljubertsy",NULL
+"Loja",NULL
+"London",NULL
+"London",NULL
+"Lublin",NULL
+"Lubumbashi",NULL
+"Lungtan",NULL
+"Luzinia",NULL
+"Madiun",NULL
+"Mahajanga",NULL
+"Maikop",NULL
+"Malm",NULL
+"Manchester",NULL
+"Mandaluyong",NULL
+"Mandi Bahauddin",NULL
+"Mannheim",NULL
+"Maracabo",NULL
+"Mardan",NULL
+"Maring",NULL
+"Masqat",NULL
+"Matamoros",NULL
+"Matsue",NULL
+"Meixian",NULL
+"Memphis",NULL
+"Merlo",NULL
+"Mexicali",NULL
+"Miraj",NULL
+"Mit Ghamr",NULL
+"Miyakonojo",NULL
+"Mogiljov",NULL
+"Molodetno",NULL
+"Monclova",NULL
+"Monywa",NULL
+"Moscow",NULL
+"Mosul",NULL
+"Mukateve",NULL
+"Munger (Monghyr)",NULL
+"Mwanza",NULL
+"Mwene-Ditu",NULL
+"Myingyan",NULL
+"Mysore",NULL
+"Naala-Porto",NULL
+"Nabereznyje Telny",NULL
+"Nador",NULL
+"Nagaon",NULL
+"Nagareyama",NULL
+"Najafabad",NULL
+"Naju",NULL
+"Nakhon Sawan",NULL
+"Nam Dinh",NULL
+"Namibe",NULL
+"Nantou",NULL
+"Nanyang",NULL
+"NDjamna",NULL
+"Newcastle",NULL
+"Nezahualcyotl",NULL
+"Nha Trang",NULL
+"Niznekamsk",NULL
+"Novi Sad",NULL
+"Novoterkassk",NULL
+"Nukualofa",NULL
+"Nuuk",NULL
+"Nyeri",NULL
+"Ocumare del Tuy",NULL
+"Ogbomosho",NULL
+"Okara",NULL
+"Okayama",NULL
+"Okinawa",NULL
+"Olomouc",NULL
+"Omdurman",NULL
+"Omiya",NULL
+"Ondo",NULL
+"Onomichi",NULL
+"Oshawa",NULL
+"Osmaniye",NULL
+"ostka",NULL
+"Otsu",NULL
+"Oulu",NULL
+"Ourense (Orense)",NULL
+"Owo",NULL
+"Oyo",NULL
+"Ozamis",NULL
+"Paarl",NULL
+"Pachuca de Soto",NULL
+"Pak Kret",NULL
+"Palghat (Palakkad)",NULL
+"Pangkal Pinang",NULL
+"Papeete",NULL
+"Parbhani",NULL
+"Pathankot",NULL
+"Patiala",NULL
+"Patras",NULL
+"Pavlodar",NULL
+"Pemalang",NULL
+"Peoria",NULL
+"Pereira",NULL
+"Phnom Penh",NULL
+"Pingxiang",NULL
+"Pjatigorsk",NULL
+"Plock",NULL
+"Po",NULL
+"Ponce",NULL
+"Pontianak",NULL
+"Poos de Caldas",NULL
+"Portoviejo",NULL
+"Probolinggo",NULL
+"Pudukkottai",NULL
+"Pune",NULL
+"Purnea (Purnia)",NULL
+"Purwakarta",NULL
+"Pyongyang",NULL
+"Qalyub",NULL
+"Qinhuangdao",NULL
+"Qomsheh",NULL
+"Quilmes",NULL
+"Rae Bareli",NULL
+"Rajkot",NULL
+"Rampur",NULL
+"Rancagua",NULL
+"Ranchi",NULL
+"Richmond Hill",NULL
+"Rio Claro",NULL
+"Rizhao",NULL
+"Roanoke",NULL
+"Robamba",NULL
+"Rockford",NULL
+"Ruse",NULL
+"Rustenburg",NULL
+"s-Hertogenbosch",NULL
+"Saarbrcken",NULL
+"Sagamihara",NULL
+"Saint Louis",NULL
+"Saint-Denis",NULL
+"Sal",NULL
+"Salala",NULL
+"Salamanca",NULL
+"Salinas",NULL
+"Salzburg",NULL
+"Sambhal",NULL
+"San Bernardino",NULL
+"San Felipe de Puerto Plata",NULL
+"San Felipe del Progreso",NULL
+"San Juan Bautista Tuxtepec",NULL
+"San Lorenzo",NULL
+"San Miguel de Tucumn",NULL
+"Sanaa",NULL
+"Santa Brbara dOeste",NULL
+"Santa F",NULL
+"Santa Rosa",NULL
+"Santiago de Compostela",NULL
+"Santiago de los Caballeros",NULL
+"Santo Andr",NULL
+"Sanya",NULL
+"Sasebo",NULL
+"Satna",NULL
+"Sawhaj",NULL
+"Serpuhov",NULL
+"Shahr-e Kord",NULL
+"Shanwei",NULL
+"Shaoguan",NULL
+"Sharja",NULL
+"Shenzhen",NULL
+"Shikarpur",NULL
+"Shimoga",NULL
+"Shimonoseki",NULL
+"Shivapuri",NULL
+"Shubra al-Khayma",NULL
+"Siegen",NULL
+"Siliguri (Shiliguri)",NULL
+"Simferopol",NULL
+"Sincelejo",NULL
+"Sirjan",NULL
+"Sivas",NULL
+"Skikda",NULL
+"Smolensk",NULL
+"So Bernardo do Campo",NULL
+"So Leopoldo",NULL
+"Sogamoso",NULL
+"Sokoto",NULL
+"Songkhla",NULL
+"Sorocaba",NULL
+"Soshanguve",NULL
+"Sousse",NULL
+"South Hill",NULL
+"Southampton",NULL
+"Southend-on-Sea",NULL
+"Southport",NULL
+"Springs",NULL
+"Stara Zagora",NULL
+"Sterling Heights",NULL
+"Stockport",NULL
+"Sucre",NULL
+"Suihua",NULL
+"Sullana",NULL
+"Sultanbeyli",NULL
+"Sumqayit",NULL
+"Sumy",NULL
+"Sungai Petani",NULL
+"Sunnyvale",NULL
+"Surakarta",NULL
+"Syktyvkar",NULL
+"Syrakusa",NULL
+"Szkesfehrvr",NULL
+"Tabora",NULL
+"Tabriz",NULL
+"Tabuk",NULL
+"Tafuna",NULL
+"Taguig",NULL
+"Taizz",NULL
+"Talavera",NULL
+"Tallahassee",NULL
+"Tama",NULL
+"Tambaram",NULL
+"Tanauan",NULL
+"Tandil",NULL
+"Tangail",NULL
+"Tanshui",NULL
+"Tanza",NULL
+"Tarlac",NULL
+"Tarsus",NULL
+"Tartu",NULL
+"Teboksary",NULL
+"Tegal",NULL
+"Tel Aviv-Jaffa",NULL
+"Tete",NULL
+"Tianjin",NULL
+"Tiefa",NULL
+"Tieli",NULL
+"Tokat",NULL
+"Tonghae",NULL
+"Tongliao",NULL
+"Torren",NULL
+"Touliu",NULL
+"Toulon",NULL
+"Toulouse",NULL
+"Trshavn",NULL
+"Tsaotun",NULL
+"Tsuyama",NULL
+"Tuguegarao",NULL
+"Tychy",NULL
+"Udaipur",NULL
+"Udine",NULL
+"Ueda",NULL
+"Uijongbu",NULL
+"Uluberia",NULL
+"Urawa",NULL
+"Uruapan",NULL
+"Usak",NULL
+"Usolje-Sibirskoje",NULL
+"Uttarpara-Kotrung",NULL
+"Vaduz",NULL
+"Valencia",NULL
+"Valle de la Pascua",NULL
+"Valle de Santiago",NULL
+"Valparai",NULL
+"Vancouver",NULL
+"Varanasi (Benares)",NULL
+"Vicente Lpez",NULL
+"Vijayawada",NULL
+"Vila Velha",NULL
+"Vilnius",NULL
+"Vinh",NULL
+"Vitria de Santo Anto",NULL
+"Warren",NULL
+"Weifang",NULL
+"Witten",NULL
+"Woodridge",NULL
+"Wroclaw",NULL
+"Xiangfan",NULL
+"Xiangtan",NULL
+"Xintai",NULL
+"Xinxiang",NULL
+"Yamuna Nagar",NULL
+"Yangor",NULL
+"Yantai",NULL
+"Yaound",NULL
+"Yerevan",NULL
+"Yinchuan",NULL
+"Yingkou",NULL
+"York",NULL
+"Yuncheng",NULL
+"Yuzhou",NULL
+"Zalantun",NULL
+"Zanzibar",NULL
+"Zaoyang",NULL
+"Zapopan",NULL
+"Zaria",NULL
+"Zeleznogorsk",NULL
+"Zhezqazghan",NULL
+"Zhoushan",NULL
+"Ziguinchor",NULL

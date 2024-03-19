@@ -1,0 +1,2 @@
+select payment.payment_id, customer.first_name,customer.last_name from payment
+right join customer on customer.customer_id = payment.payment_id

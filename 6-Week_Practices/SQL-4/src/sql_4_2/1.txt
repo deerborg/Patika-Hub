@@ -1,0 +1,2 @@
+select city.city, country.country from city
+left join country on city.city_id = country.country_id
