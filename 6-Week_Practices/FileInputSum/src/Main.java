@@ -6,8 +6,9 @@ import java.io.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
+class Sum {
+
+    public void writer(){
 
         // Kullanıcıdan toplanacak rakamların istendiği blok
         try(BufferedWriter writer = new BufferedWriter(new FileWriter("src/dosya.txt"))){
@@ -36,6 +37,8 @@ public class Main {
         } catch (IOException e) {
             System.out.println("ERROR but IDONTKNOW");
         }
+    }
+    public void readerSum(){
 
         // Dosya okuma ve toplam sonuç verme bloğu
         try(Scanner scanner = new Scanner(new BufferedReader(new FileReader("src/dosya.txt")))){
@@ -51,6 +54,14 @@ public class Main {
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
         }
+    }
 
+}
+
+public class Main {
+    public static void main(String[] args) {
+       Sum sum = new Sum();
+       sum.writer();
+       sum.readerSum();
     }
 }
