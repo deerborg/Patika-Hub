@@ -95,6 +95,23 @@ This repository is an archive containing all the projects I have completed durin
 
 </details>
 
+### Week 6
+
+<details>
+<summary>Click to expand Week 5 projects</summary>
+
+| # | Project Name   | Source Code                                           |
+|---|----------------| ----------------------------------------------------- |
+| 1 | File Input Sum | [Source](https://github.com/deerborg/Patika-Hub/tree/main/6-Week_Practices/FileInputSum)          |
+| 2 | Notepad        | [Source](https://github.com/deerborg/Patika-Hub/tree/main/6-Week_Practices/Notepad)     |
+| 3 | SQL - 2        | [Source](https://github.com/deerborg/Patika-Hub/tree/main/6-Week_Practices/SQL-2)      |
+| 4 | SQL - 3        | [Source](https://github.com/deerborg/Patika-Hub/tree/main/6-Week_Practices/SQL-3)               |
+| 5 | SQL - 4        | [Source](https://github.com/deerborg/Patika-Hub/tree/main/6-Week_Practices/SQL-4)               |
+| 6 | SQL - 5        | [Source](https://github.com/deerborg/Patika-Hub/tree/main/6-Week_Practices/SQL-5)               |
+
+
+</details>
+
 ## Feedback
 
 Feel free to submit your feedback [here](https://dborg.art/contact).
