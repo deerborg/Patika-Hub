@@ -1,0 +1,40 @@
+ID: 1
+NAME: Furkan Aydemir
+POSITION: Maritime Management
+SALARY: 90000
+ID: 2
+NAME: Batuhan Yurudur
+POSITION: Engineer
+SALARY: 80000
+ID: 3
+NAME: Semih Turan
+POSITION: Engineer
+SALARY: 80000
+ID: 4
+NAME: Rohat Doganer
+POSITION: Tekniker
+SALARY: 60000
+ID: 5
+NAME: Ulas Gultekin
+POSITION: Software Engineer
+SALARY: 50000
+ID: 1
+NAME: Furkan Aydemir
+POSITION: Maritime Management
+SALARY: 90000
+ID: 2
+NAME: Batuhan Yurudur
+POSITION: Engineer
+SALARY: 80000
+ID: 3
+NAME: Semih Turan
+POSITION: Engineer
+SALARY: 80000
+ID: 4
+NAME: Rohat Doganer
+POSITION: Tekniker
+SALARY: 60000
+ID: 5
+NAME: Ulas Gultekin
+POSITION: Software Engineer
+SALARY: 50000
