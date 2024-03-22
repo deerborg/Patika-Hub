@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class DB_Connect {
 
     private final String URL = "jdbc:mysql://localhost/employees";
-    private final String USERNAME = "root";
-    private final String PASSWORD = "mysql";
+    private final String USERNAME = "user_name"; // enter user_name for sql
+    private final String PASSWORD = "password"; // enter password for sql
     private String query;
     private Connection connection;
     private Statement statement;
