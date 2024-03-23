@@ -40,7 +40,5 @@ public class Main {
         Notes notes = new Notes();
         notes.takeNote();
         notes.readNote();
-
-
     }
 }
