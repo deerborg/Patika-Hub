@@ -52,7 +52,7 @@ public class DB_Connect {
             throw new RuntimeException(e);
         }
     }
-    // Writes the queries made for the database to the txt file
+    // Writes the queries made for the database to the txt files
     public void writeDB(){
         try(BufferedWriter writer = new BufferedWriter(new FileWriter("src/employees_save.txt",true))){
 
