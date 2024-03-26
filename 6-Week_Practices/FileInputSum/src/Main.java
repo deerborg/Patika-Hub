@@ -55,7 +55,6 @@ class Sum {
             System.out.println("File not found");
         }
     }
-
 }
 
 public class Main {
