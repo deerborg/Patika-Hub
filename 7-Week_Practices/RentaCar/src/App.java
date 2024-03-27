@@ -1,18 +1,16 @@
-import core.DB;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import bussines.UserManager;
+import core.Database;
+import core.Helper;
+import view.AdminView;
+import view.LoginView;
 
 public class App {
 
-
     public static void main(String[] args) {
+        Database.getStatus();
+        //LoginView l = new LoginView();
+        UserManager user  = new UserManager();
 
-        Connection con = DB.getInstance();
-
-
+        AdminView a = new AdminView(user.findByLogin("admin","1511"));
     }
-
-
 }
