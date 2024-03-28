@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d0529d7-e98a-400f-9585-ef536e6d6f73" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/BrandDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/DB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bussines/BrandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bussines/BrandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bussines/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bussines/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doa/BrandDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/doa/UserDoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/UserDoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Brand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Brand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/AdminView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AdminView.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/AdminView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AdminView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Desigin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Desigin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

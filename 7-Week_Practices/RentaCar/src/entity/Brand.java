@@ -1,13 +1,11 @@
 package entity;
 
-import doa.BrandDao;
-
-import java.util.ArrayList;
+import dao.ModelDao;
 
 public class Brand {
     private int brand_id;
     private String brand_name;
-    private BrandDao brandDao;
+    private ModelDao brandDao;
 
     public Brand() {
 
@@ -18,6 +16,9 @@ public class Brand {
         this.brand_name = brand_name;
     }
 
+    public Brand(String brand_name) {
+        this.brand_name = brand_name;
+    }
 
     @Override
     public String toString() {

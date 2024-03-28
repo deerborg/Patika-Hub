@@ -1,7 +1,11 @@
 package view;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class Desigin extends JFrame {
@@ -29,7 +33,7 @@ public class Desigin extends JFrame {
         setTitle(title);
         setSize(width,height);
         setVisible(true);
-        setResizable(false);
+        setResizable(true);
 
         int x = (Toolkit.getDefaultToolkit().getScreenSize().width - getSize().width) / 2;
         int y = (Toolkit.getDefaultToolkit().getScreenSize().height - getSize().height) / 2;
@@ -38,5 +42,19 @@ public class Desigin extends JFrame {
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+    }
+
+    public int getTableSelectedRow(JTable table,int index){
+        return Integer.parseInt(table.getValueAt(table.getSelectedRow(),index).toString());
+    }
+    public void tableSelectedRow(JTable table){
+        table.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                int selectedRow = table.rowAtPoint(e.getPoint());
+                table.setRowSelectionInterval(selectedRow,selectedRow);
+                table.setEnabled(true);
+            }
+        });
     }
 }

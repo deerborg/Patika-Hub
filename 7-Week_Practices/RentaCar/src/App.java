@@ -1,7 +1,9 @@
+import bussines.BrandManager;
 import bussines.UserManager;
 import core.Database;
 import core.Helper;
 import view.AdminView;
+import view.BrandView;
 import view.LoginView;
 
 public class App {
@@ -12,5 +14,6 @@ public class App {
         UserManager user  = new UserManager();
 
         AdminView a = new AdminView(user.findByLogin("admin","1511"));
+
     }
 }

@@ -1,4 +1,4 @@
-package doa;
+package dao;
 
 import core.Database;
 import entity.User;
@@ -50,7 +50,7 @@ public class UserDoa {
             while (data.next()){
 
                 int id = (data.getInt("user_id"));
-                String name = (data.getString("useR_name"));
+                String name = (data.getString("user_name"));
                 String pass = (data.getString("user_pass"));
                 String perm = (data.getString("user_role"));
 
