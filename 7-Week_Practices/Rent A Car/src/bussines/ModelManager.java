@@ -17,9 +17,9 @@ public class ModelManager {
         return modelDao.findByAll();
     }
 
-    public ArrayList<Object[]> getForTable(int size){
+    public ArrayList<Object[]> getForTable(int size, ArrayList<Model> list){
         ArrayList<Object[]> modelList = new ArrayList<>();
-        for(Model obj : findByAll()){
+        for(Model obj : list){
             int i = 0;
             Object[] rowObject = new Object[size];
             rowObject[i++] = obj.getModel_id();
@@ -55,5 +55,30 @@ public class ModelManager {
     }
     public ArrayList<Model> getByBrandId(int id){
         return modelDao.getBrandId(id);
+    }
+    public ArrayList<Model> filterTable(int id,Model.Fuel fuel,Model.Gear gear ,Model.Type type){
+        ArrayList<String> whereList = new ArrayList<>();
+        String select = "select * from public.model";
+
+        if(id != 0){
+            whereList.add("model_brand_id = " + id);
+        }
+        if(fuel != null){
+            whereList.add("model_fuel = '" + fuel.toString() + "'");
+        }
+        if(gear != null){
+            whereList.add("model_gear = '" + gear.toString() + "'");
+        }
+        if(type != null){
+            whereList.add("model_type = '" + type.toString() + "'");
+        }
+        String whereStr = String.join(" and ",whereList);
+        String query = select;
+        if(whereStr.length() > 0){
+            query += " where " + whereStr;
+        }
+        return modelDao.selectByQuery(query);
+
+
     }
 }

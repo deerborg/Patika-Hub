@@ -1,5 +1,7 @@
 package entity;
 
+import core.ComboItem;
+
 public class Model {
     private int model_id;
     private int model_brand_id;
@@ -38,6 +40,9 @@ public class Model {
         this.type = type;
         this.gear = gear;
         this.fuel = fuel;
+    }
+    public ComboItem getComboItem(){
+        return new ComboItem(getModel_id(),getBrand().getBrand_name() + " - " + getModel_name() + " - " + getModel_year() + " - " + getGear());
     }
 
     public int getModel_id() {
