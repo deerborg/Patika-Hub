@@ -5,7 +5,6 @@ import bussines.CarManager;
 import bussines.ModelManager;
 import core.ComboItem;
 import core.Helper;
-import entity.Brand;
 import entity.Car;
 import entity.Model;
 
@@ -20,6 +19,7 @@ public class CarView extends Layout{
     private JTextField fld_km;
     private JTextField fld_plate;
     private JButton btn_save;
+    private JButton btn_cancel;
     private Car car = null;
     private CarManager carManager;
     private ModelManager modelManager;
@@ -78,8 +78,11 @@ public class CarView extends Layout{
             }
         });
 
-
-
-
+        btn_cancel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+        });
     }
 }

@@ -14,7 +14,7 @@ public  class Layout extends JFrame {
         setVisible(true);
         setSize(width,height);
         setTitle(title);
-
+        setResizable(false);
         int x = (Toolkit.getDefaultToolkit().getScreenSize().width - getSize().width) / 2;
         int y = (Toolkit.getDefaultToolkit().getScreenSize().height - getSize().width) / 2;
 

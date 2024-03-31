@@ -1,19 +1,20 @@
 package view;
 
+import bussines.BookManager;
 import bussines.BrandManager;
 import bussines.CarManager;
 import bussines.ModelManager;
 import core.ComboItem;
 import core.Helper;
-import entity.Brand;
-import entity.Car;
-import entity.Model;
-import entity.User;
+import entity.*;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.text.MaskFormatter;
 import java.awt.event.*;
+import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class AdminView extends Layout {
     private JPanel container;
@@ -31,6 +32,14 @@ public class AdminView extends Layout {
     private JButton btn_search;
     private JButton btn_clear;
     private JTable table_car;
+    private JFormattedTextField fld_start_date;
+    private JFormattedTextField fld_fnsh_date;
+    private JComboBox cmd_gear_type;
+    private JComboBox cmd_fuel_type;
+    private JComboBox cmd_car_type;
+    private JTable table_book;
+    private JButton btn_find;
+    private JButton btn_book_clear;
     private User user;
     private DefaultTableModel brand_model;
     private BrandManager brandManager;
@@ -40,8 +49,13 @@ public class AdminView extends Layout {
     private Object[] columsName;
     private CarManager carManager;
     private JPopupMenu carPopMenu;
+    private BookManager bookManager;
+    private Book book;
+    private JPopupMenu bookPopMenu;
+    private Object[] carBookColum;
 
     public AdminView(User user) {
+        bookManager = new BookManager();
         brandManager = new BrandManager();
         modelManager = new ModelManager();
         carManager = new CarManager();
@@ -49,7 +63,7 @@ public class AdminView extends Layout {
         add(container);
         pageArt(1000, 500, "Admin Page");
 
-        if (user == null) {
+        if (user == null) { // Kullanıcı giriş bilgileri bulunamadığında
             Helper.msg("Accsess blocked");
             dispose();
         }
@@ -57,14 +71,24 @@ public class AdminView extends Layout {
         // Başlangıc label
         lbl_loginUser.setText(lbl_loginUser.getText() + " " + user.getUser_name());
 
+        // Markalar
         brandTableLoadRefresh(); // tablo oluşturma ve yenileme metodu
         popMenusBrand();
 
+        // Modeller
         modelTableLoadRefreshList(null);
         popMenusModels();
-        carTableLoadRefresh();
         modelsFilter();
+
+        // Araçlar
+        carTableLoadRefresh();
         popMenusCar();
+
+        // Müşteriler
+        bookTableLoadRefresh(null);
+        popMenusBook();
+        booksFilter();
+
 
 
         // Exit butonu
@@ -75,6 +99,7 @@ public class AdminView extends Layout {
             }
         });
 
+        // Clear butonu
         btn_clear.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -84,8 +109,34 @@ public class AdminView extends Layout {
                 brandNameFilter();
             }
         });
+        // Find buyonu
+        btn_find.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ArrayList<Car> carList = carManager.searchBooking(fld_start_date.getText(),fld_fnsh_date.getText(),
+                        (Model.Type) cmd_car_type.getSelectedItem(),
+                        (Model.Gear) cmd_gear_type.getSelectedItem(),
+                        (Model.Fuel) cmd_fuel_type.getSelectedItem());
+                ArrayList<Object[]> carBookRow = carManager.getForTable(carBookColum.length,carList);
+                bookTableLoadRefresh(carBookRow);
+            }
+        });
+
+        // Clear butonu Books
+        btn_book_clear.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cmd_car_type.setSelectedItem(null);
+                cmd_fuel_type.setSelectedItem(null);
+                cmd_gear_type.setSelectedItem(null);
+                fld_fnsh_date.setText("");
+                fld_start_date.setText("");
+                bookTableLoadRefresh(null);
+            }
+        });
     }
 
+    //---------------------------------METOTLAR-------------------------------------------
 
     public void modelsFilter() {
         cmd_fuel_search.setModel(new DefaultComboBoxModel(Model.Fuel.values()));
@@ -119,6 +170,12 @@ public class AdminView extends Layout {
         ArrayList<Object[]> carList = carManager.getForTable(columns.length,carManager.findByAll());
         createTable(brand_model, table_car, columns, carList);
     }
+
+    public void bookTableLoadRefresh(ArrayList<Object[]> carList){
+        carBookColum = new Object[]{"ID", "Car","Name","Number","Mail","Start Date","Finish Date","Price","Note","Case"};
+        createTable(brand_model, table_book, columsName, carList);
+    }
+
 
     // tablo oluşturma ve yenileme metodu
     public void modelTableLoadRefresh() {
@@ -198,11 +255,7 @@ public class AdminView extends Layout {
         });
 
         table_brand.setComponentPopupMenu(brandPopMenu);
-
-
-
     }
-
 
     // Brand için pop menü
     public void popMenusModels() {
@@ -274,14 +327,12 @@ public class AdminView extends Layout {
 
         table_model.setComponentPopupMenu(modelPopMenu);
     }
-
     public void popMenusCar() {
         // Brand Tablosu için pop menüler
         this.carPopMenu = new JPopupMenu();
 
         // Mouse seçim işlemleri
         tableMouseSelect(table_car);
-
 
         carPopMenu.add("New").addActionListener(new ActionListener() {
             @Override
@@ -317,7 +368,6 @@ public class AdminView extends Layout {
                 });
             }
         });
-
         carPopMenu.add("Delete").addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -334,13 +384,35 @@ public class AdminView extends Layout {
                 }
             }
         });
-
         table_car.setComponentPopupMenu(carPopMenu);
-
-
-
     }
 
+    public void popMenusBook(){
+        bookPopMenu = new JPopupMenu();
+        bookPopMenu.add("Rezervation").addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
 
+            }
+        });
+    }
+    public void booksFilter(){
+        cmd_car_type.setModel(new DefaultComboBoxModel(Model.Type.values()));
+        cmd_car_type.setSelectedItem(null);
+        cmd_fuel_type.setModel(new DefaultComboBoxModel(Model.Fuel.values()));
+        cmd_fuel_type.setSelectedItem(null);
+        cmd_gear_type.setModel(new DefaultComboBoxModel(Model.Gear.values()));
+        cmd_gear_type.setSelectedItem(null);
+    }
 
+    // Tarih formatı "##/##/####
+    private void createUIComponents() {
+        try {
+            fld_start_date = new JFormattedTextField(new MaskFormatter("##/##/####"));
+            fld_fnsh_date = new JFormattedTextField(new MaskFormatter("##/##/####"));
+
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

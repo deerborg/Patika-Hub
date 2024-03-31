@@ -7,6 +7,7 @@ public class Helper {
 
     // Tema secimi
     public static void setTheme(){
+
         for(UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()){
             if(info.getName().equals("Nimbus")){
                 try {
