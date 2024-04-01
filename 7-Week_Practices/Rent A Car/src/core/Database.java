@@ -8,9 +8,9 @@ public class Database {
 
     private Connection connection = null;
     private static Database connector = null;
-    private final String Database_URL = "jdbc:postgresql://localhost:5432/rentacar";
-    private final String Database_USERNAME = "postgres";
-    private final String Database_PASSWORD = "1511";
+    private final String Database_URL = "jdbc:postgresql://localhost:5432/###";
+    private final String Database_USERNAME = "####";
+    private final String Database_PASSWORD = "###";
 
     private Database() {
         try {

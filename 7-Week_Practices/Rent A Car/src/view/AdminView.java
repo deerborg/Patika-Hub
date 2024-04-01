@@ -14,7 +14,6 @@ import javax.swing.text.MaskFormatter;
 import java.awt.event.*;
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class AdminView extends Layout {
     private JPanel container;
@@ -40,6 +39,7 @@ public class AdminView extends Layout {
     private JTable table_book;
     private JButton btn_find;
     private JButton btn_book_clear;
+    private JTable table_book_list;
     private User user;
     private DefaultTableModel brand_model;
     private BrandManager brandManager;
@@ -61,7 +61,7 @@ public class AdminView extends Layout {
         carManager = new CarManager();
         this.user = user;
         add(container);
-        pageArt(1000, 500, "Admin Page");
+        pageArt(1200, 700, "Admin Page");
 
         if (user == null) { // Kullanıcı giriş bilgileri bulunamadığında
             Helper.msg("Accsess blocked");
@@ -89,6 +89,7 @@ public class AdminView extends Layout {
         popMenusBook();
         booksFilter();
 
+        bookListTableRefresh();
 
 
         // Exit butonu
@@ -98,6 +99,42 @@ public class AdminView extends Layout {
                 System.exit(0);
             }
         });
+
+
+    }
+
+    //---------------------------------METOTLAR-------------------------------------------
+
+    public void modelsFilter() {
+        cmd_fuel_search.setModel(new DefaultComboBoxModel(Model.Fuel.values()));
+        cmd_fuel_search.setSelectedItem(null); // Default olarak içi boş şekilde gelir
+        cmd_gear_search.setModel(new DefaultComboBoxModel(Model.Gear.values()));
+        cmd_gear_search.setSelectedItem(null);
+        cmd_type_search.setModel(new DefaultComboBoxModel(Model.Type.values()));
+        cmd_type_search.setSelectedItem(null);
+        brandNameFilter();
+    }
+
+    private void brandNameFilter() {
+        cmd_brand_search.removeAllItems();
+        for (Brand brand : brandManager.findByAll()) {
+            cmd_brand_search.addItem(new ComboItem(brand.getBrand_id(), brand.getBrand_name()));
+        }
+        cmd_brand_search.setSelectedItem(null);
+    }
+
+    public void bookListTableRefresh(){
+        Object[] columns = {"Book ID", "Car ID","Name","ID No","Phone","Mail","Start Date","Finish Date","Price","Note","Case"};
+        ArrayList<Object[]> bookList = bookManager.getForTable(columns.length,bookManager.findByAll());
+        createTable(brand_model, table_book_list, columns, bookList);
+    }
+
+    // tablo oluşturma ve yenileme metodu
+    public void brandTableLoadRefresh() {
+        // Tablo oluşturma  veri ekleme işlemleri ve tablo işlemleri
+        Object[] columns = {"ID", "Name"};
+        ArrayList<Object[]> brandsList = brandManager.getForTable(columns.length);
+        createTable(brand_model, table_brand, columns, brandsList);
 
         // Clear butonu
         btn_clear.addActionListener(new ActionListener() {
@@ -134,35 +171,6 @@ public class AdminView extends Layout {
                 bookTableLoadRefresh(null);
             }
         });
-    }
-
-    //---------------------------------METOTLAR-------------------------------------------
-
-    public void modelsFilter() {
-        cmd_fuel_search.setModel(new DefaultComboBoxModel(Model.Fuel.values()));
-        cmd_fuel_search.setSelectedItem(null); // Default olarak içi boş şekilde gelir
-        cmd_gear_search.setModel(new DefaultComboBoxModel(Model.Gear.values()));
-        cmd_gear_search.setSelectedItem(null);
-        cmd_type_search.setModel(new DefaultComboBoxModel(Model.Type.values()));
-        cmd_type_search.setSelectedItem(null);
-        brandNameFilter();
-    }
-
-    private void brandNameFilter() {
-        cmd_brand_search.removeAllItems();
-        for (Brand brand : brandManager.findByAll()) {
-            cmd_brand_search.addItem(new ComboItem(brand.getBrand_id(), brand.getBrand_name()));
-        }
-        cmd_brand_search.setSelectedItem(null);
-    }
-
-
-    // tablo oluşturma ve yenileme metodu
-    public void brandTableLoadRefresh() {
-        // Tablo oluşturma  veri ekleme işlemleri ve tablo işlemleri
-        Object[] columns = {"ID", "Name"};
-        ArrayList<Object[]> brandsList = brandManager.getForTable(columns.length);
-        createTable(brand_model, table_brand, columns, brandsList);
     }
 
     public void carTableLoadRefresh(){
@@ -392,9 +400,18 @@ public class AdminView extends Layout {
         bookPopMenu.add("Rezervation").addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                int selectId = getSelectedRow(table_book,0);
+                BookView bookView = new BookView(carManager.getById(selectId),fld_start_date.getText(),fld_fnsh_date.getText());
+                bookView.addWindowListener(new WindowAdapter() {
+                    @Override
+                    public void windowClosed(WindowEvent e) {
+                        bookTableLoadRefresh(null);
+                        booksFilter();
+                    }
+                });
             }
         });
+        table_book.setComponentPopupMenu(bookPopMenu);
     }
     public void booksFilter(){
         cmd_car_type.setModel(new DefaultComboBoxModel(Model.Type.values()));
@@ -405,14 +422,19 @@ public class AdminView extends Layout {
         cmd_gear_type.setSelectedItem(null);
     }
 
-    // Tarih formatı "##/##/####
+    // Tarih formatı "##/##/####"
     private void createUIComponents() {
         try {
             fld_start_date = new JFormattedTextField(new MaskFormatter("##/##/####"));
             fld_fnsh_date = new JFormattedTextField(new MaskFormatter("##/##/####"));
+            fld_start_date.setText("10/10/2023");
+            fld_fnsh_date.setText("16/10/2023");
 
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
     }
+
+
+
 }
