@@ -108,6 +108,7 @@ This repository is an archive containing all the projects I have completed durin
 | 4 | SQL - 3        | [Source](https://github.com/deerborg/Patika-Hub/tree/main/6-Week_Practices/SQL-3)               |
 | 5 | SQL - 4        | [Source](https://github.com/deerborg/Patika-Hub/tree/main/6-Week_Practices/SQL-4)               |
 | 6 | SQL - 5        | [Source](https://github.com/deerborg/Patika-Hub/tree/main/6-Week_Practices/SQL-5)               |
+| 7 | Database Connector| [Source](https://github.com/deerborg/Patika-Hub/tree/main/6-Week_Practices/DB_App/src)               |
 
 
 </details>
