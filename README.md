@@ -113,6 +113,18 @@ This repository is an archive containing all the projects I have completed durin
 
 </details>
 
+### Week 7
+
+<details>
+<summary>Click to expand Week 4 projects</summary>
+
+| #   | Project Name          | Source Code                                           |
+| --- |-----------------------| ----------------------------------------------------- |
+| 1   | Rent a Car GUI        | [Source](https://github.com/deerborg/Patika-Hub/tree/main/7-Week_Practices/Rent%20A%20Car/src)          |
+
+
+</details>
+
 ## Feedback
 
 Feel free to submit your feedback [here](https://dborg.art/contact).
