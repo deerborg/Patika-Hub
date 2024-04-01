@@ -98,7 +98,7 @@ This repository is an archive containing all the projects I have completed durin
 ### Week 6
 
 <details>
-<summary>Click to expand Week 5 projects</summary>
+<summary>Click to expand Week 6 projects</summary>
 
 | # | Project Name   | Source Code                                           |
 |---|----------------| ----------------------------------------------------- |
@@ -116,7 +116,7 @@ This repository is an archive containing all the projects I have completed durin
 ### Week 7
 
 <details>
-<summary>Click to expand Week 4 projects</summary>
+<summary>Click to expand Week 7 projects</summary>
 
 | #   | Project Name          | Source Code                                           |
 | --- |-----------------------| ----------------------------------------------------- |
