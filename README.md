@@ -1,4 +1,4 @@
-# Patika+ Full Stack Bootcamp Repository
+# Full Stack Bootcamp Repository
 
 ![Patika+ Full Stack Bootcamp](https://github.com/deerborg/Patika-Hub/assets/152931069/f524418e-39f0-4696-8c70-1bf1cfa8f862)
 
