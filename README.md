@@ -116,7 +116,7 @@ This repository is an archive containing all the projects I have completed durin
 ### Week 7
 
 <details>
-<summary>Click to expand Week 7 projects</summary>
+<summary>Click to expand Week 7 project</summary>
 
 | #   | Project Name          | Source Code                                           |
 | --- |-----------------------| ----------------------------------------------------- |
